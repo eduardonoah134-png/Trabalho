@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website is Under Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-stars" id="starsContainer"></div>
+    
+    <!-- Floating Background Gears -->
+    <div class="gear gear-1">⚙️</div>
+    <div class="gear gear-2">⚙️</div>
+    <div class="gear gear-3">⚙️</div>
+
+    <main class="card-container">
+        <!-- Main Body -->
+        <section class="content-wrapper">
+            <!-- Left Info Column -->
+            <div class="text-content">
+                <div class="headline-container">
+                    <h2 class="title-sub">WEBSITE IS</h2>
+                    <h1 class="title-main">UNDER CONSTRUCTION</h1>
+                </div>
+                <p class="description">
+                    Estamos trabalhando para trazer uma experiência incrível para você. Em breve, novos recursos, design renovado e muito mais!
+                </p>
+            </div>
+
+            <!-- Right Illustration Scene -->
+            <div class="illustration-container">
+                <!-- Tablet Device Wireframe -->
+                <div class="tablet-mockup">
+                    <div class="tablet-header">
+                        <span class="tablet-bar"></span>
+                    </div>
+                    <div class="tablet-screen">
+                        <div class="screen-grid">
+                            <div class="screen-card card-1">
+                                <div class="card-img-placeholder">
+                                    <div class="mountain-icon">▲</div>
+                                </div>
+                            </div>
+                            <div class="screen-card card-2">
+                                <div class="wireframe-line line-1"></div>
+                                <div class="wireframe-line line-2"></div>
+                                <div class="wireframe-line line-3"></div>
+                                <div class="wireframe-line line-4"></div>
+                            </div>
+                        </div>
+                        <!-- Painted fresh area -->
+                        <div class="paint-overlay" id="paintOverlay"></div>
+                    </div>
+                </div>
+
+                <!-- Floating Wireframe Cards -->
+                <div class="floating-bubble bubble-left">
+                    <div class="mini-bar"></div>
+                    <div class="mini-bar short"></div>
+                </div>
+                <div class="floating-bubble bubble-right">
+                    <div class="mini-bar"></div>
+                    <div class="mini-bar"></div>
+                    <div class="mini-bar short"></div>
+                </div>
+
+                <!-- Animated Characters and Props (SVG) -->
+                <svg class="scene-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#7B61FF" />
+                            <stop offset="100%" stop-color="#4F35D2" />
+                        </linearGradient>
+                        <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#FFD13B" />
+                            <stop offset="100%" stop-color="#F39C12" />
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Shadow Base -->
+                    <ellipse cx="300" cy="465" rx="270" ry="12" fill="#E4E0FD" opacity="0.7"/>
+
+                    <!-- Ladder -->
+                    <g id="ladder" class="ladder-anim">
+                        <line x1="210" y1="460" x2="275" y2="215" stroke="#372075" stroke-width="7" stroke-linecap="round"/>
+                        <line x1="255" y1="460" x2="310" y2="215" stroke="#372075" stroke-width="7" stroke-linecap="round"/>
+                        <line x1="218" y1="425" x2="263" y2="425" stroke="#372075" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="228" y1="380" x2="273" y2="380" stroke="#372075" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="238" y1="335" x2="283" y2="335" stroke="#372075" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="248" y1="290" x2="293" y2="290" stroke="#372075" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="258" y1="245" x2="303" y2="245" stroke="#372075" stroke-width="5" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- Worker 1 on ladder (Painting) -->
+                    <g id="painter-worker" class="worker-ladder">
+                        <!-- Legs -->
+                        <path d="M260,335 L260,375" stroke="#F39C12" stroke-width="12" stroke-linecap="round"/>
+                        <path d="M280,315 L280,355" stroke="#E67E22" stroke-width="12" stroke-linecap="round"/>
+                        <!-- Shoes -->
+                        <path d="M255,380 L268,380" stroke="#2C3E50" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M275,360 L288,360" stroke="#2C3E50" stroke-width="8" stroke-linecap="round"/>
+                        <!-- Body / Overalls -->
+                        <rect x="255" y="270" width="28" height="48" rx="8" fill="#F39C12"/>
+                        <!-- Shirt -->
+                        <path d="M255,270 L283,270 L283,285 L255,285 Z" fill="#5F27CD"/>
+                        <!-- Head -->
+                        <circle cx="270" cy="245" r="13" fill="#FFEAA7"/>
+                        <!-- Hard hat -->
+                        <path d="M252,243 C252,230 288,230 288,243 Z" fill="#FFC312"/>
+                        <rect x="250" y="241" width="40" height="4" rx="2" fill="#FFC312"/>
+                        <!-- Paint Roller Arm (Animated) -->
+                        <g class="arm-roller">
+                            <path d="M278,275 L300,240 L315,200" stroke="#FFEAA7" stroke-width="7" stroke-linecap="round" fill="none"/>
+                            <line x1="315" y1="200" x2="320" y2="175" stroke="#333" stroke-width="4"/>
+                            <rect x="300" y="165" width="38" height="14" rx="4" fill="#6C5CE7" class="roller-head"/>
+                        </g>
+                    </g>
+
+                    <!-- Worker 2 on ground (Carrying bucket) -->
+                    <g id="ground-worker" class="worker-ground">
+                        <!-- Legs -->
+                        <path d="M430,390 L425,455" stroke="#F39C12" stroke-width="13" stroke-linecap="round"/>
+                        <path d="M455,390 L465,455" stroke="#E67E22" stroke-width="13" stroke-linecap="round"/>
+                        <!-- Shoes -->
+                        <path d="M418,458 L432,458" stroke="#2C3E50" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M460,458 L475,458" stroke="#2C3E50" stroke-width="8" stroke-linecap="round"/>
+                        <!-- Body -->
+                        <rect x="425" y="340" width="30" height="55" rx="9" fill="#F39C12"/>
+                        <!-- Shirt -->
+                        <path d="M425,340 L455,340 L455,358 L425,358 Z" fill="#5F27CD"/>
+                        <!-- Head -->
+                        <circle cx="440" cy="320" r="13" fill="#FFEAA7"/>
+                        <!-- Hard Hat -->
+                        <path d="M422,318 C422,305 458,305 458,318 Z" fill="#FFC312"/>
+                        <rect x="420" y="316" width="40" height="4" rx="2" fill="#FFC312"/>
+                        <!-- Right Arm carrying bucket -->
+                        <g class="bucket-arm">
+                            <path d="M430,350 L415,385 L415,405" stroke="#FFEAA7" stroke-width="6" stroke-linecap="round" fill="none"/>
+                            <!-- Paint Bucket -->
+                            <g transform="translate(400, 405)" class="swing-bucket">
+                                <path d="M5,10 L8,32 L27,32 L30,10 Z" fill="#5F27CD"/>
+                                <ellipse cx="17.5" cy="10" rx="12.5" ry="3" fill="#7D5FFF"/>
+                                <path d="M6,10 C6,2 29,2 29,10" stroke="#888" stroke-width="2" fill="none"/>
+                            </g>
+                        </g>
+                    </g>
+
+                    <!-- Construction Cones -->
+                    <g class="cone cone-left" transform="translate(170, 410)">
+                        <polygon points="18,0 4,45 32,45" fill="#FF793F"/>
+                        <polygon points="15,12 8,30 28,30 21,12" fill="#FFFFFF"/>
+                        <rect x="0" y="45" width="36" height="7" rx="3" fill="#FF5252"/>
+                        <circle cx="18" cy="2" r="3" fill="#FFF275" class="cone-light"/>
+                    </g>
+                    <g class="cone cone-right" transform="translate(480, 410)">
+                        <polygon points="18,0 4,45 32,45" fill="#FF793F"/>
+                        <polygon points="15,12 8,30 28,30 21,12" fill="#FFFFFF"/>
+                        <rect x="0" y="45" width="36" height="7" rx="3" fill="#FF5252"/>
+                        <circle cx="18" cy="2" r="3" fill="#FFF275" class="cone-light"/>
+                    </g>
+
+                    <!-- Construction Barrier -->
+                    <g class="barrier" transform="translate(505, 385)">
+                        <!-- Legs -->
+                        <rect x="8" y="20" width="6" height="60" fill="#3D3D3D"/>
+                        <rect x="74" y="20" width="6" height="60" fill="#3D3D3D"/>
+                        <!-- Base Feet -->
+                        <rect x="2" y="78" width="18" height="6" rx="2" fill="#2C3E50"/>
+                        <rect x="68" y="78" width="18" height="6" rx="2" fill="#2C3E50"/>
+                        <!-- Striped Board -->
+                        <g>
+                            <rect x="0" y="0" width="88" height="35" rx="4" fill="#F1C40F" stroke="#2C3E50" stroke-width="2"/>
+                            <!-- Diagonal Stripes -->
+                            <clipPath id="barrierClip">
+                                <rect x="0" y="0" width="88" height="35" rx="4"/>
+                            </clipPath>
+                            <g clip-path="url(#barrierClip)">
+                                <line x1="0" y1="0" x2="25" y2="40" stroke="#341F97" stroke-width="12"/>
+                                <line x1="25" y1="0" x2="50" y2="40" stroke="#341F97" stroke-width="12"/>
+                                <line x1="50" y1="0" x2="75" y2="40" stroke="#341F97" stroke-width="12"/>
+                                <line x1="75" y1="0" x2="100" y2="40" stroke="#341F97" stroke-width="12"/>
+                            </g>
+                        </g>
+                    </g>
+
+                    <!-- Floating paint drops -->
+                    <circle cx="330" cy="180" r="3" fill="#6C5CE7" class="particle p1"/>
+                    <circle cx="340" cy="210" r="2" fill="#6C5CE7" class="particle p2"/>
+                    <circle cx="310" cy="230" r="2.5" fill="#7B61FF" class="particle p3"/>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
